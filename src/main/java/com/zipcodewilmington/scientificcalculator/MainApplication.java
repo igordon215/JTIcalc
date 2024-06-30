@@ -10,6 +10,7 @@ public class MainApplication {
 
         //DISPLAY FOR NEW USER
         Calculator user = new Calculator(0, 0, 0, 0);
+        Magic8Ball magic8Ball = new Magic8Ball();
         Console.println("Greetings! Welcome to JTI Calculator! \n ZIPCODE ROCKS");
 
         //SHOW STARTING DISPLAY
@@ -26,14 +27,16 @@ public class MainApplication {
             //Receive first value and set to display value
             user.setFirstVal("Enter a starting value");
             Console.println("| Your total value is | %.2f", user.getDisplayVal());
-
             //START PROGRAM LOOP
             while (true) {
                 //ASK FOR THE OPERATOR + CONSOLE PRINT
                 String nextOperator;
                 nextOperator = AskNumber.getOperation();
+
+                if (nextOperator.equalsIgnoreCase("Magic8ball")) {
+                    Magic8Ball.askMagic8Ball();
                 //ADDITION
-                if (nextOperator.equalsIgnoreCase("Add")) {
+            } else if (nextOperator.equalsIgnoreCase("Add")) {
                     user.secondVal = AskNumber.askDouble();
                     user.displayVal = MathMethods.add(user.displayVal, user.secondVal);
                     Console.println("| Your total value is | %.2f", user.displayVal);
@@ -115,8 +118,10 @@ public class MainApplication {
                 //CLEAR DISPLAY
                 } else if (nextOperator.equalsIgnoreCase("Clear")) {
                     user.clearDisplayVal();
-                    break;
+                //Magic 8 bsll
                 }
+                    break;
+
             }
         }
     }
