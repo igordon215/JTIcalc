@@ -13,7 +13,7 @@ public class AskNumber {
 // ASK FOR THE OPERATION
 public static String getOperation() {
     String operator = "";
-    String menu = "\nPLEASE PICK FROM THE FOLLOWING \n| ADD | SUBTRACT |  MULTIPLY |  DIVIDE |  REMAINDER |  SQUARE |  SQUARE_ROOT |  VARIABLE_EXPOVariableExpo\n| INVERSE | -NUM | M+ | MC | MRC | SINCE | COSINE | TANGENT | CLEAR";
+    String menu = "\nPLEASE PICK FROM THE FOLLOWING \n| ADD | SUBTRACT |  MULTIPLY |  DIVIDE |  REMAINDER |  SQUARE |  SquareRoot | VariableExpo\n| INVERSE | -NUM | M+ | MC | MRC | SINCE | COSINE | TANGENT | CLEAR";
     operator = Console.getStringInput("What would you like to do...?" + menu);
 //WHILE LOOP
     while(!operator.equalsIgnoreCase("Add")  && !operator.equalsIgnoreCase("Subtract")  && !operator.equalsIgnoreCase("Multiply")  && !operator.equalsIgnoreCase("Divide") && !operator.equalsIgnoreCase("Remainder") && !operator.equalsIgnoreCase("Square") && !operator.equalsIgnoreCase("SquareRoot") && !operator.equalsIgnoreCase("VariableExpo") && !operator.equalsIgnoreCase("Inverse") && !operator.equalsIgnoreCase("-Num") && !operator.equalsIgnoreCase("M+") && !operator.equalsIgnoreCase("MC") && !operator.equalsIgnoreCase("MRC") && !operator.equalsIgnoreCase("Sine") && !operator.equalsIgnoreCase("Cosine") && !operator.equalsIgnoreCase("Tangent") && !operator.equalsIgnoreCase("Clear")){
