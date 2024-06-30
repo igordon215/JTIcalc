@@ -8,13 +8,14 @@ public class Calculator {
     double savedVal;
     double displayVal;
 
-    public Calculator(double firstValIn, double secondValIn, double displayVal, double savedValIn) {
+    public Calculator(double firstValIn, double secondValIn, double displayValIn, double savedValIn) {
         this.firstVal = firstValIn;
         this.secondVal = secondValIn;
         this.displayVal = displayValIn;
         this.savedVal = savedValIn;
     }
-    
+
+    //Display based on user input
     public void setFirstVal(String prompt) {
         Scanner doubleScanner = new Scanner(System.in);
         Console.println(prompt);
