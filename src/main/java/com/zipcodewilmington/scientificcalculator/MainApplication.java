@@ -21,7 +21,7 @@ public class MainApplication {
 
         //START WHILE LOOP aka start the calc program
         while (true) {
-             //Store Operation
+             //Store Operation ????
             String operator = "";
 
             //Receive first value and set to display value
@@ -110,6 +110,10 @@ public class MainApplication {
                 //TANGENT
                 } else if (nextOperator.equalsIgnoreCase("Tangent")) {
                     user.displayVal = MathMethods.tan(user.displayVal);
+                    Console.println("| Your total value is | %.2f", user.displayVal);
+                // TO DEGREE
+                } else if (nextOperator.equalsIgnoreCase("To Degree")) {
+                    user.displayVal = MathMethods.toDegree(user.displayVal);
                     Console.println("| Your total value is | %.2f", user.displayVal);
                 //CLEAR DISPLAY
                 } else if (nextOperator.equalsIgnoreCase("Clear")) {

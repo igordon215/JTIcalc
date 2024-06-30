@@ -73,4 +73,10 @@ public class MathMethods {
         double result5 = Math.abs(a);
         return result5;
     }
+    // method to degree
+    public static double toDegree(double a) {
+        double result12 = Math.toDegrees(a);
+        return result12;
+    }
+
 }
