@@ -112,13 +112,22 @@ public class MainApplication {
                     user.displayVal = MathMethods.tan(user.displayVal);
                     Console.println("| Your total value is | %.2f", user.displayVal);
                 // TO DEGREE
-                } else if (nextOperator.equalsIgnoreCase("To Degree")) {
+                } else if (nextOperator.equalsIgnoreCase("Degree")) {
                     user.displayVal = MathMethods.toDegree(user.displayVal);
                     Console.println("| Your total value is | %.2f", user.displayVal);
+                // TO RADIAN
+                } else if (nextOperator.equalsIgnoreCase("Radian")) {
+                        user.displayVal = MathMethods.toRadian(user.displayVal);
+                        Console.println("| Your total value is | %.2f", user.displayVal);
+                //INVERSE SIN
+                } else if (nextOperator.equalsIgnoreCase("InverseSine")) {
+                    user.displayVal = MathMethods.invSine(user.displayVal);
+                    Console.println("| Your total value is | %.2f", user.displayVal);
+
+
                 //CLEAR DISPLAY
                 } else if (nextOperator.equalsIgnoreCase("Clear")) {
                     user.clearDisplayVal();
-                //Magic 8 bsll
                 }
                     break;
 
