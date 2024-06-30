@@ -1,6 +1,6 @@
 package com.zipcodewilmington.scientificcalculator;
 
-public class mathMethods {
+public class MathMethods {
     // contains all math methods
 
     // method for addition
