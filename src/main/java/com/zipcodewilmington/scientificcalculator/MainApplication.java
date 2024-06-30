@@ -33,10 +33,13 @@ public class MainApplication {
                 String nextOperator;
                 nextOperator = AskNumber.getOperation();
 
+                //Magic8ball
                 if (nextOperator.equalsIgnoreCase("Magic8ball")) {
                     Magic8Ball.askMagic8Ball();
-                //ADDITION
-            } else if (nextOperator.equalsIgnoreCase("Add")) {
+                    //ADDITION
+                }else if (nextOperator.equalsIgnoreCase("BlackJack")) {
+                    BlackJack.playBlackJack();
+                }else if (nextOperator.equalsIgnoreCase("Add")) {
                     user.secondVal = AskNumber.askDouble();
                     user.displayVal = MathMethods.add(user.displayVal, user.secondVal);
                     Console.println("| Your total value is | %.2f", user.displayVal);
