@@ -31,7 +31,7 @@ public class Calculator {
         return displayVal;
     }
 
-    public void ClearDisplayVal() {
+    public void clearDisplayVal() {
         this.displayVal = 0;
         Console.println("Your total is %.2f", displayVal);
     }

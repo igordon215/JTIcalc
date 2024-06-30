@@ -1,12 +1,12 @@
 package com.zipcodewilmington.scientificcalculator;
-// ASK A NUMBER CLASS
+
 public class AskNumber {
 
-    // NEED TO ASK FOR INPUT OF A DOUBLE
+    // Ask for a Double
 
     public static double askDouble() {
         double d = 0;
-        d = Console.getDoubleInput("ENTER A NUMBER");
+        d = Console.getDoubleInput("Enter a number.");
         return d;
     }
 

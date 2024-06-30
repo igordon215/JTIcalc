@@ -5,7 +5,7 @@ import java.util.Random;
 public class Magic8Ball {
 
     private static void askMagic8Ball() {
-        Scanner scanner = new Scanner(System.in)
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Ask the Magic 8 Ball a yes-or-no question: ");
         scanner.nextLine(); // Consume newline before reading the question
         String question = scanner.nextLine();
