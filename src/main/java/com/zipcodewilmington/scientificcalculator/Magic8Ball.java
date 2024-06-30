@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Magic8Ball {
 
-    private static void askMagic8Ball() {
+    public static void askMagic8Ball() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ask the Magic 8 Ball a yes-or-no question: ");
         scanner.nextLine(); // Consume newline before reading the question
@@ -13,7 +13,7 @@ public class Magic8Ball {
         System.out.println("Magic 8 Ball says: " + response);
     }
 
-    private static String getRandomMagic8BallResponse() {
+    public static String getRandomMagic8BallResponse() {
         String[] responses = {
                 "It is certain.",
                 "It is decidedly so.",
