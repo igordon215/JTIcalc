@@ -78,5 +78,14 @@ public class MathMethods {
         double result12 = Math.toDegrees(a);
         return result12;
     }
+    // method to degree
+    public static double toRadian(double a){
+        double result13 = Math.toRadians(a);
+        return result13;
+    //inverse sin
+    }public static double invSine(double a){
+        double result14 = Math.asin(a);
+        return result14;
+    }
 
 }
