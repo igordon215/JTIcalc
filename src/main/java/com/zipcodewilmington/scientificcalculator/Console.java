@@ -22,17 +22,6 @@ public class Console {
         return strInput;
     }
 
-    public static String evalMenuOption(String m){
-        if (m.equals("A")) {
-            println("your string is " + m);
-        } else if (m.equals("B")) {
-            println("your string is " + m);
-        } else {
-            println("Invalid Input! Please type A for Integer or B for Double");
-            println("your string is " + m);
-        }
-        return m;
-    }
 
     public static double getDoubleInput(String prompt) {
         Scanner doubleScanner = new Scanner(System.in);
