@@ -36,11 +36,11 @@ public class Calculator {
         Console.println("Your total is %.2f", displayVal);
     }
 
-    public void setSavedVal(double a) {
-        this.savedVal = a;
-    }
+   public void setSavedVal(double a) {
+       this.savedVal = a;
+   }
 
-    public double getSavedVal() {
-        return savedVal;
+   public double getSavedVal() {
+       return savedVal;
     }
 }
