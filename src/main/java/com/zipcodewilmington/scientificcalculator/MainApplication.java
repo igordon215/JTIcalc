@@ -126,8 +126,6 @@ public class MainApplication {
                 } else if (nextOperator.equalsIgnoreCase("InverseSine")) {
                     user.displayVal = MathMethods.invSine(user.displayVal);
                     Console.println("| Your total value is | %.2f", user.displayVal);
-
-
                 //CLEAR DISPLAY
                 } else if (nextOperator.equalsIgnoreCase("Clear")) {
                     user.clearDisplayVal();
