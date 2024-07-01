@@ -35,7 +35,7 @@ public class Calculator {
         this.displayVal = 0;
         Console.println("Your total is %.2f", displayVal);
     }
-
+// this still needs attention
    public void setSavedVal(double a) {
        this.savedVal = a;
    }
